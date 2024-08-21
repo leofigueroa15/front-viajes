@@ -1,24 +1,30 @@
 import React from 'react'
+import Navbar from 'react-bootstrap/Navbar';
+import Container from 'react-bootstrap/Container';
+import Button from 'react-bootstrap/Button';
+
 
 const Header = () => {
     return (
         <>
-            <header className="py-5 header"></header>
-            <header className="py-4">
-                <div className="container-xl">
-                    <div className="row justify-content-center justify-content-md-between">
-                        <div className="col-8 col-md-3">
-                            <a href="index.html">
-                                <h3>reservalo.com</h3>
-                            </a>
-                        </div>
-                        <div className="col-md-6 a d-flex align-items-start justify-content-end">
-                            <button type="button" className="btn btn-outline-secondary">Login</button>
-                            <button type="button" className="btn btn-outline-secondary">Registrarse</button>
-                        </div>
-                    </div>
-                </div>
-            </header>
+
+            <Navbar expand="lg" className="bg-body-tertiary py-5 header">
+                <Container>
+                    <Navbar.Brand href="#"></Navbar.Brand>
+                </Container>
+            </Navbar>
+            <Navbar className="bg-body-tertiary">
+                <Container>
+                    <Navbar.Brand href="#">viajando.com</Navbar.Brand>
+                    <Navbar.Toggle />
+                    <Navbar.Collapse className="justify-content-end">
+                        <Navbar.Text>
+                            <Button variant="outline-success">Login</Button>
+                            <Button variant="outline-success">Registrate</Button>
+                        </Navbar.Text>
+                    </Navbar.Collapse>
+                </Container>
+            </Navbar>
         </>
     )
 }

@@ -2,21 +2,22 @@ import React from 'react'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Search from './components/Search'
-import Carousel from './components/Carousel'
+import CarouselCard from './components/CarouselCard'
 import Information from './components/Information'
 import Favorites from './components/Favorites'
+import Container from 'react-bootstrap/Container';
 
 const TravelApp = () => {
     return (
         <>
-            <Header />
-            <main>
+            <Container fluid>
+                <Header />
                 <Search />
-                <Carousel />
+                <CarouselCard />
                 <Information />
                 <Favorites />
-            </main>
-            <Footer />
+                <Footer />
+            </Container>
         </>
     )
 }

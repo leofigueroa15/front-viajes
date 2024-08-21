@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from 'react-bootstrap/Button';
 
 const Search = () => {
     return (
@@ -7,6 +8,7 @@ const Search = () => {
                 <div className="col-4">
                     <img className="img-fluid" src="./public/img/logoReservalo.png" alt="imagen guitarra" />
                 </div>
+                <Button variant="primary">Primary</Button>
 
             </div>
         </div>

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Carousel = () => {
+const CarouselCard = () => {
     return (
         <div className='container-xl mt-5'>
             <div className="row justify-content-center justify-content-md-between">
@@ -36,4 +36,4 @@ const Carousel = () => {
     )
 }
 
-export default Carousel
+export default CarouselCard
