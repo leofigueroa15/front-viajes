@@ -7,7 +7,6 @@ import Button from 'react-bootstrap/Button';
 const Header = () => {
     return (
         <>
-
             <Navbar expand="lg" className="bg-body-tertiary py-5 header">
                 <Container>
                     <Navbar.Brand href="#"></Navbar.Brand>
